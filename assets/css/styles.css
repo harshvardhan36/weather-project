@@ -114,14 +114,41 @@ body {
     100% { border-color: blue; }
 }
 
-/* Notification Panel */
+/* Notification Panel Enhancement */
 .notification-panel {
     margin-top: 20px;
     padding: 20px;
-    width: 300px;
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 10px;
-    backdrop-filter: blur(10px);
+    width: 100%;
+    max-width: 600px;
+    background: linear-gradient(135deg, #4e9fd1, #00bcd4); /* Gradient background */
+    border-radius: 12px; /* Rounded corners */
+    backdrop-filter: blur(10px); /* Blurred background for glassmorphism effect */
     font-size: 1.2rem;
-    color: white;
+    color: #fff; /* Text color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    text-align: center;
+    transition: all 0.3s ease; /* Smooth transition */
+    margin: 20px auto;
+}
+
+.notification-panel h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.notification-panel p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+/* Hover effect for better interactivity */
+.notification-panel:hover {
+    transform: translateY(-5px); /* Slight lift effect */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Styling for icons */
+.notification-panel img {
+    margin-bottom: 15px;
+    width: 50px; /* Icon size */
 }
